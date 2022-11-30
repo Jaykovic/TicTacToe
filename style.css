@@ -1,0 +1,174 @@
+/* body and container */
+body{
+  font-family: 'Eczar', serif;
+  background: #ebebeb;
+}
+
+
+/* top logo and nav bar */
+
+#header-img {
+  max-width: 150px;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #ebebeb;
+  
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  float: right;
+}
+nav a {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  padding: 15px 10px;
+  color: #ebebeb;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #c25904;
+}
+
+/* main tagline and photo */
+
+#main {
+  text-align: center;
+  padding: 55px;
+  background-image: url("https://i.ibb.co/p0b70Yv/bw-chess.jpg" );
+  height: 300px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+#main h1 {
+  font-size: 4em;
+  line-height: 1.75;
+  animation-name: glow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow{
+  0%{
+    text-shadow: 0 5px 10px #ebebeb;
+  }
+  25%{
+    text-shadow: 0 5px 20px #ebebeb;
+  }
+  50%{
+    text-shadow: 0 5px 30px #ebebeb;
+  }
+  75%{
+    text-shadow: 0 5px 20px #ebebeb;
+  }
+  100%{
+    text-shadow: 0 5px 10px #ebebeb;
+  }
+}
+
+#main p {
+  font-size: 1.5em;
+  ling-height: .2;
+  color: #ebebeb;
+}
+
+/* table of boxes */
+
+.container-b{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.container-b div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.box {
+  width: 25%;
+  text-align: center;
+}
+
+
+
+
+/* video section */
+
+.videowrapper{
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* form and submit section */
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#form {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+#email {
+  padding: 5px;
+  font-size: 1em;
+}
+
+#submit{
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid #c25904;
+  border-radius: 20%;
+}
+
+#submit:hover{
+  background-color: #c25904;
+  color: white;
+}
+
+/* footer section */
+
+footer{
+  background: #c25904;
+  text-align: center;
+}
+
+
+@media and screen (max-width: 6200px) {
+.container-b{
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+}
+
+
